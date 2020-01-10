@@ -7,8 +7,8 @@ class Lock extends Component {
         return (
             <Fragment>
                 {this.props.isCorrect ?
-                    <input className='field' style={{backgroundColor: 'green', border: '4px solid'}} type='text' value={this.props.code}/>:
-                    <input className='field' type='password' value={this.props.code}/>
+                    <input className='field' style={{backgroundColor: 'green', border: '4px solid'}} type='text' defaultValue={this.props.code}/>:
+                    <input className='field' type='password' defaultValue={this.props.code}/>
                 }
                 <div className='numbers'>
                     {numbers.map(num => {
