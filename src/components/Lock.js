@@ -12,7 +12,7 @@ class Lock extends Component {
                 }
                 <div className='numbers'>
                     {numbers.map(num => {
-                        return <button className='btn' onClick={()=>this.props.number(num)}>{num}</button>
+                        return <button key={num} className='btn' onClick={()=>this.props.number(num)}>{num}</button>
                     })}
                     <button className='btn' onClick={this.props.remove}>X</button>
                     <button className='btn' onClick={this.props.result}>E</button>
